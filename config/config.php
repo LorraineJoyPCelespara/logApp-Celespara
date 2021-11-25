@@ -1,6 +1,6 @@
 <?php
 	define('ROOT_URL', '');
-	define('DB_HOST', '');
-	define('DB_USER', '');
-	define('DB_PASS', '');
-	define('DB_NAME', '');
+	define('DB_HOST', 'sql6.freesqldatabase.com');
+	define('DB_USER', 'sql6453957');
+	define('DB_PASS', 'Y33rsMW3C4');
+	define('DB_NAME', 'sql6453957');
