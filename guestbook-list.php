@@ -1,9 +1,11 @@
 <?php
-    require('config/config.php');
-    require('config/db.php');
-    $persons = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    $query = 'SELECT * FROM person ORDER BY personid DESC';
-    $result = mysqli_query($conn, $query);
+   require('config/config.php');
+     require('config/db.php');
+ 
+     $query = 'SELECT * FROM person ORDER BY personid DESC';
+     $result = mysqli_query($conn, $query);
+     $persons = mysqli_fetch_all($result, MYSQLI_ASSOC);
+     
 ?>
 
 <?php include('inc/header.php'); ?>
@@ -26,8 +28,8 @@
                 <?php foreach($persons as $person) : ?>
                     <tr>
                     <th scope="row"><?php echo $person['personid'];?></th>
-                    <td><?php echo $person['lastname'];?></td>
                     <td><?php echo $person['firstname'];?></td>
+                    <td><?php echo $person['lastname'];?></td>
                     <td><?php echo $person['address'];?></td>
                     <td><?php echo $person['logdt'];?></td>
                     </tr>
