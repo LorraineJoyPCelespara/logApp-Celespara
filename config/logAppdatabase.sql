@@ -37,7 +37,7 @@ CREATE TABLE `useraccount` (
 -- Dumping data for table `useraccount`
 --
 
-INSERT INTO `account` (`uid`, `username`, `password`) VALUES
+INSERT INTO `useraccount` (`uid`, `username`, `password`) VALUES
 (1, 'pig', 'p3n');
 
 -- --------------------------------------------------------
@@ -72,7 +72,7 @@ INSERT INTO `person` (`pid`, `firstname`, `lastname`, `address`, `logdt`) VALUES
 --
 -- Indexes for table `useraccount`
 --
-ALTER TABLE `account`
+ALTER TABLE `useraccount`
   ADD PRIMARY KEY (`uid`);
 
 --
@@ -86,7 +86,7 @@ ALTER TABLE `person`
 --
 
 --
--- AUTO_INCREMENT for table `account`
+-- AUTO_INCREMENT for table `useraccount`
 --
 ALTER TABLE `useraccount`
   MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
